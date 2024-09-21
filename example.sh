@@ -15,16 +15,15 @@ fi
 
 colored-msg "BLU" "this is a simple message in blue"
 sleep 0.2
-colored-task "create file z.txt" "touch z.txt"
+colored-task "list files in folder (stdout silenced)" "ls -lhr"
 sleep 0.2
-colored-task "ls -lha"
+colored-task "create a files" "touch z" "x" "f"
 sleep 0.2
-colored-task "cat long name file" "cat 'long name with spaces.txt'"
+colored-task "remove files" "rm z" "x" "f"
 sleep 0.2
-colored-task "git init"
+colored-task "sleep 2"
 sleep 0.2
-colored-task "rytrtuywrtrqwer"
+colored-task "fake-missing-command"
 sleep 0.2
-colored-task "echo long goodbye"
-
+colored-task "echo long goodbye, this should never be run"
 
